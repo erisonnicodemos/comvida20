@@ -62,6 +62,10 @@ section#metas{
     .li-btn-doacao {
         margin-left: 0px;
     }
+
+    footer {
+        display: none;
+    }
   }
 
 .btn-doe:hover {

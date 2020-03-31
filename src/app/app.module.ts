@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './shared/home/home.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { DoacaoComponent } from './paginas/doacao/doacao.component';
 import { LayoutComponent } from './shared/layout.page';
 
 
@@ -17,8 +16,7 @@ import { LayoutComponent } from './shared/layout.page';
     LayoutComponent,
     HomeComponent,
     MenuComponent,
-    FooterComponent,
-    DoacaoComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
