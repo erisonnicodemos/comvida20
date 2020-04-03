@@ -1,46 +1,46 @@
 {
-    "boxes":[
+    "boxes": [
         {
             "id": 1,
-            "titulo":"Doações em dinheiro",
-            "texto":"Qualquer quantia que possa ajudar a manter mais leitos no hospital.",
-            "icone":"Dinheiro.png",
-            "categoria":1
+            "titulo": "Doações em dinheiro",
+            "texto": "Qualquer quantia que possa ajudar a manter mais leitos no hospital.",
+            "icone": "Dinheiro.png",
+            "categoria": 1
         },
         {
             "id": 2,
-            "titulo":"Trabalho Voluntário",
-            "texto":"Você pode ajudar com sua mão de obra. Precisamos de médicos, enfermeiros, costureiras, designers, profissionais de comunicação, entre outros.",
-            "icone":"luva.png",
-            "categoria":1
+            "titulo": "Trabalho Voluntário",
+            "texto": "Você pode ajudar com sua mão de obra. Precisamos de médicos, enfermeiros, costureiras, designers, profissionais de comunicação, entre outros.",
+            "icone": "luva.png",
+            "categoria": 1
         },
         {
             "id": 3,
-            "titulo":"Doação de Sangue",
-            "texto":"Ajude a reabastecer nossas bolsas de sangue.",
-            "icone":"doacao.png",
-            "categoria":1
+            "titulo": "Doação de Sangue",
+            "texto": "Ajude a reabastecer nossas bolsas de sangue.",
+            "icone": "doacao.png",
+            "categoria": 1
         },
         {
             "id": 4,
-            "titulo":"Doações em dinheiro",
-            "texto":"Qualquer quantia que possa ajudar a manter mais leitos no hospital.",
-            "icone":"Dinheiro.png",
-            "categoria":2
+            "titulo": "Doações em dinheiro",
+            "texto": "Qualquer quantia que possa ajudar a manter mais leitos no hospital.",
+            "icone": "Dinheiro.png",
+            "categoria": 2
         },
         {
             "id": 5,
-            "titulo":"Doação de materiais e insumos hospitalares",
-            "texto":"• EPI’S máscaras, aventais e luvas Lençóis Álcool em gel Equipamentos hospitalares.",
-            "icone":"doacao.png",
-            "categoria":2
+            "titulo": "Doação de materiais e insumos hospitalares",
+            "texto": "• EPI’S máscaras, aventais e luvas Lençóis Álcool em gel Equipamentos hospitalares.",
+            "icone": "doacao.png",
+            "categoria": 2
         },
         {
             "id": 6,
-            "titulo":"Força de Trabalho",
-            "texto":"Sua equipe em prol do voluntariado",
-            "icone":"forca.png",
-            "categoria":2
+            "titulo": "Força de Trabalho",
+            "texto": "Sua equipe em prol do voluntariado",
+            "icone": "forca.png",
+            "categoria": 2
         }
     ],
     "bancos": [
@@ -48,25 +48,32 @@
             "id": 1,
             "instituicao": "BANCO ITAÚ",
             "agencia": "1732",
-            "conta":"13350-7",
-            "titular":"CASA DE SAÚDE SANTA MARCELINA",
+            "conta": "13350-7",
+            "titular": "CASA DE SAÚDE SANTA MARCELINA",
             "Cnpj": "60.742.616/0001-60"
         },
         {
             "id": 2,
             "instituicao": "BANCO DO BRASIL",
             "agencia": "1911-9",
-            "conta":"8560-X",
-            "titular":"STA MARCELINA COMVIDA-20",
+            "conta": "8560-X",
+            "titular": "STA MARCELINA COMVIDA-20",
             "Cnpj": "60.742.616/0001-60"
         },
         {
             "id": 3,
             "instituicao": "BANCO SANTANDER",
             "agencia": "3809",
-            "conta":"13000370-2",
-            "titular":"CASA DE SAÚDE SANTA MARCELINA",
+            "conta": "13000370-2",
+            "titular": "CASA DE SAÚDE SANTA MARCELINA",
             "Cnpj": "60.742.616.0001-60"
+        }
+    ],
+    "arrecadacao": [
+        {
+            "id": 1,
+            "totalArrecadado": 150000,
+            "pencentual": 5
         }
     ]
 }
