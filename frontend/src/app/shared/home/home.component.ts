@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Arrecadacao } from 'src/app/shared/arrecadacao/arrecadacao.model';
+import { Arrecadacao } from 'src/app/shared/componentes/arrecadacao/arrecadacao.model';
 
 @Component({
   selector: 'app-home',

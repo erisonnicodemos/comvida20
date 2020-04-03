@@ -11,7 +11,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LayoutComponent } from './shared/layout.page';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ArrecadacaoComponent } from './shared/arrecadacao/arrecadacao.component';
+import { ArrecadacaoComponent } from './shared/componentes/arrecadacao/arrecadacao.component';
+import { AdicionarArrecadacaoComponent } from './paginas/adicionar-arrecadacao/adicionar-arrecadacao.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArrecadacaoComponent } from './shared/arrecadacao/arrecadacao.component
     HomeComponent,
     MenuComponent,
     FooterComponent,
-    ArrecadacaoComponent
+    ArrecadacaoComponent,
+    AdicionarArrecadacaoComponent
   ],
   imports: [
     BrowserModule,

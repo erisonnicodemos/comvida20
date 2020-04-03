@@ -8,6 +8,7 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ArrecadacaoService {
+ 
 
   constructor(private httpClient: HttpClient) { }
   url = 'http://localhost:3000/arrecadacao'; 
@@ -28,6 +29,14 @@ export class ArrecadacaoService {
     return this.httpClient.get<Arrecadacao>(this.url + '/' + id)
       .pipe(
         retry(2),
+        catchError(this.handleError)
+      )
+  }
+
+  atualizar(arrecadacao: Arrecadacao): Observable<Arrecadacao> {
+    return this.httpClient.put<Arrecadacao>(this.url + '/' + arrecadacao.id, JSON.stringify(arrecadacao), this.httpOptions)
+      .pipe(
+        retry(1),
         catchError(this.handleError)
       )
   }
