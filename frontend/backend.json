@@ -72,8 +72,8 @@
   "arrecadacao": [
     {
       "id": 1,
-      "totalArrecadado": 150000,
-      "pencentual": 5
+      "totalArrecadado": "25000",
+      "pencentual": "25"
     }
   ]
 }

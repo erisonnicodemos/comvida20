@@ -11,11 +11,14 @@ export class ArrecadacaoComponent implements OnInit {
   arrecadacao = {} as Arrecadacao[];
   valor :Arrecadacao ;
   arrecadacoes: Arrecadacao[];
+  interval;
 
   constructor(private arrecadacaoService: ArrecadacaoService) { }
 
   ngOnInit() {
-    this.obterArrecadacao();
+    this.interval = setInterval(() => { 
+      this.obterArrecadacao();
+    }, 5000);
   }
 
   obterArrecadacoes() {

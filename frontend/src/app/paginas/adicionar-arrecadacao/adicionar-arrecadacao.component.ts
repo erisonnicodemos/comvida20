@@ -5,8 +5,7 @@ import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-adicionar-arrecadacao',
-  templateUrl: './adicionar-arrecadacao.component.html',
-  styleUrls: ['./adicionar-arrecadacao.component.css']
+  templateUrl: './adicionar-arrecadacao.component.html'
 })
 export class AdicionarArrecadacaoComponent implements OnInit {
 
@@ -27,10 +26,10 @@ export class AdicionarArrecadacaoComponent implements OnInit {
     });
   }
 
-  Atualizar(form: NgForm) {   
-      this.arrecadacaoService.atualizar(this.valor).subscribe(() => {
-      });
-    
+  atualizar() {  
+      this.arrecadacaoService
+      .atualizar(this.valor).subscribe(() => {
+    });    
   }
 
 
