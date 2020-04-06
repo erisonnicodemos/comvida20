@@ -11,7 +11,7 @@ export class ArrecadacaoService {
  
 
   constructor(private httpClient: HttpClient) { }
-  url = 'http://localhost:3000/arrecadacao'; 
+  url = 'https://santamarcelina-comvida20.firebaseio.com/arrecadacao.json'; 
    // Headers
    httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
