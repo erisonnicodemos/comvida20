@@ -10,9 +10,8 @@ import { ToastrService } from 'ngx-toastr';
 
 export class AdicionarArrecadacaoComponent implements OnInit {
 
-  arrecadacao = {} as Arrecadacao[];
   arrecadacoes: Arrecadacao[];
-  valor: Arrecadacao;
+  arrecadacao: Arrecadacao;
 
   constructor(
     private arrecadacaoService: ArrecadacaoService,
@@ -25,14 +24,23 @@ export class AdicionarArrecadacaoComponent implements OnInit {
   obterArrecadacao() {
     this.arrecadacaoService.obterArredacao(1)
       .subscribe((arrecadacao: Arrecadacao) => {
-        this.valor = arrecadacao;
+        this.arrecadacao = arrecadacao;
       });
   }
 
+ 
+  
   atualizar() {
-    this.arrecadacaoService
-      .atualizar(this.valor.id, this.valor).subscribe(() => { });
-    this.toastr.success(`Total: ${this.valor.totalArrecadado} Percentual: ${this.valor.pencentual}%`, "Valor atualizado!");
+    this.arrecadacaoService.atualizar(this.arrecadacao).subscribe(
+      res => {
+        this.toastr.success(`Total: ${this.arrecadacao.totalArrecadado} Percentual: ${this.arrecadacao.pencentual}%`, "Valor atualizado!");
+       
+      },
+      err => {
+        console.log(err);
+      }
+    )
   }
+ 
 
 }

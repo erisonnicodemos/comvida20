@@ -8,39 +8,33 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ArrecadacaoService {
- 
+  private headers: HttpHeaders;
+  url = 'https://localhost:44304/api/arrecadacao';
 
-  constructor(private httpClient: HttpClient) { }
-  url = 'https://localhost:44304/api/arrecadacao'; 
-   // Headers
-   httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  constructor(private http: HttpClient) {
+    this.headers = new HttpHeaders({'Content-Type': 'application/json; charset=utf-8'});
   }
 
   // Obtem todos os carros
   obterArrecadacoes(): Observable<Arrecadacao[]> {
-    return this.httpClient.get<Arrecadacao[]>(this.url)
+    return this.http.get<Arrecadacao[]>(this.url)
       .pipe(
         retry(2),
         catchError(this.handleError))
   }
 
   obterArredacao(id: number): Observable<Arrecadacao> {
-    return this.httpClient.get<Arrecadacao>(this.url + '/' + id)
+    return this.http.get<Arrecadacao>(this.url + '/' + id)
       .pipe(
         retry(2),
         catchError(this.handleError)
       )
   }
 
-
-  atualizar(id: number, arrecadacao): Observable<Arrecadacao> {
-    return this.httpClient.put<Arrecadacao>(this.url + '/'+ id, JSON.stringify(arrecadacao), this.httpOptions)
-    .pipe(
-      retry(1),
-      catchError(this.handleError)
-    );
-}
+  public atualizar(arrecadacao) {
+    return this.http
+    .put(this.url + '/' + arrecadacao.id, arrecadacao);
+  }
 
 
   // Manipulação de erros

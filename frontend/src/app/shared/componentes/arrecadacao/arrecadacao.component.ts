@@ -16,7 +16,7 @@ export class ArrecadacaoComponent implements OnInit {
   ngOnInit() {
     this.interval = setInterval(() => { 
       this.obterArrecadacao();
-    }, 5000);
+    }, 2000);
   }
 
 
