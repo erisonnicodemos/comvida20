@@ -11,7 +11,7 @@ export class ArrecadacaoService {
  
 
   constructor(private httpClient: HttpClient) { }
-  url = 'https://santamarcelina-comvida20.firebaseio.com/arrecadacao.json'; 
+  url = 'https://localhost:44304/api/arrecadacao'; 
    // Headers
    httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -33,13 +33,15 @@ export class ArrecadacaoService {
       )
   }
 
-  atualizar(arrecadacao: Arrecadacao): Observable<Arrecadacao> {
-    return this.httpClient.put<Arrecadacao>(this.url + '/' + arrecadacao.id, JSON.stringify(arrecadacao), this.httpOptions)
-      .pipe(
-        retry(1),
-        catchError(this.handleError)
-      )
-  }
+
+  atualizar(id: number, arrecadacao): Observable<Arrecadacao> {
+    return this.httpClient.put<Arrecadacao>(this.url + '/'+ id, JSON.stringify(arrecadacao), this.httpOptions)
+    .pipe(
+      retry(1),
+      catchError(this.handleError)
+    );
+}
+
 
   // Manipulação de erros
   handleError(error: HttpErrorResponse) {

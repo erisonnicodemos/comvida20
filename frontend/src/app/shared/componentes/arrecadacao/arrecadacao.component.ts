@@ -8,9 +8,7 @@ import { ArrecadacaoService } from './arrecadacao.service';
 })
 export class ArrecadacaoComponent implements OnInit {
 
-  arrecadacao = {} as Arrecadacao[];
-  valor :Arrecadacao ;
-  arrecadacoes: Arrecadacao[];
+  arrecadacao :Arrecadacao ;
   interval;
 
   constructor(private arrecadacaoService: ArrecadacaoService) { }
@@ -21,17 +19,11 @@ export class ArrecadacaoComponent implements OnInit {
     }, 5000);
   }
 
-  obterArrecadacoes() {
-    this.arrecadacaoService.obterArrecadacoes()
-    .subscribe((arrecadacoes: Arrecadacao[]) => {
-      this.arrecadacao = arrecadacoes;
-    });
-  }
 
   obterArrecadacao() {
     this.arrecadacaoService.obterArredacao(1)
     .subscribe((arrecadacao: Arrecadacao) => {
-      this.valor = arrecadacao;
+      this.arrecadacao = arrecadacao;
     });
   }
 

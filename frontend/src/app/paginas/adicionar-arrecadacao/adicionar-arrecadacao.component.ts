@@ -7,6 +7,7 @@ import { ToastrService } from 'ngx-toastr';
   selector: 'app-adicionar-arrecadacao',
   templateUrl: './adicionar-arrecadacao.component.html'
 })
+
 export class AdicionarArrecadacaoComponent implements OnInit {
 
   arrecadacao = {} as Arrecadacao[];
@@ -30,10 +31,8 @@ export class AdicionarArrecadacaoComponent implements OnInit {
 
   atualizar() {
     this.arrecadacaoService
-      .atualizar(this.valor).subscribe(() => {
-      });
-      this.toastr.success(`Total: ${this.valor.totalArrecadado} Percentual: ${this.valor.pencentual}%` ,"Valor atualizado!");
+      .atualizar(this.valor.id, this.valor).subscribe(() => { });
+    this.toastr.success(`Total: ${this.valor.totalArrecadado} Percentual: ${this.valor.pencentual}%`, "Valor atualizado!");
   }
-
 
 }
