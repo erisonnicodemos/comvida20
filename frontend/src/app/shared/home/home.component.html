@@ -34,51 +34,37 @@
             <span class="title-grey">Pessoa Física</span>
           </h2>
           <div class="linha"></div>
-          <p class="font-size-lg text-muted mb-6">
-          </p>
-          <div class="d-flex">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/Dinheiro.png" alt="">
-            </div>
-            <div class="ml-5">
-              <h3 class="text-primary mb-1">
-                Doações em dinheiro
-              </h3>
-              <p class="text-muted mb-6">
-                Qualquer quantia que possa ajudar a manter mais leitos no hospital.
-              </p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/luva.png" alt="">
-            </div>
-            <div class="ml-5">
-              <!-- Heading -->
-              <h3 class="text-primary mb-1">
-                Trabalho Voluntário
-              </h3>
-              <!-- Text -->
-              <p class="text-muted mb-6">
-                Você pode ajudar com sua mão de obra. Precisamos de médicos, enfermeiros,
-                costureiras,
-                designers, profissionais de comunicação, entre outros.
-              </p>
+          <br>
+          <div class="box" *ngFor="let bloco of blocos | slice:0:2">
+            <div *ngIf="bloco.tipo === 1" class="d-flex">
+              <div class="icon text-primary">
+                <img class="icone-campanha" src="./assets/img/icones/{{bloco.imagem}}" alt="">
+              </div>
+              <div class="ml-5">
+                <h3 class="text-primary mb-1">
+                  {{bloco.titulo}}
+                </h3>
+                <p class="text-muted mb-6">
+                  {{bloco.descricao}}
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-6 aos-init aos-animate">
-          <div class="d-flex">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/doacao.png" alt="">
-            </div>
-            <div class="ml-5">
-              <h3 class="text-primary mb-1">
-                Doação de Sangue
-              </h3>
-              <p class="text-muted mb-6">
-                Ajude a reabastecer nossas bolsas de sangue.
-              </p>
+          <div class="box" *ngFor="let bloco of blocos | slice:2:3">
+            <div *ngIf="bloco.tipo === 1" class="d-flex">
+              <div class="icon text-primary">
+                <img class="icone-campanha" src="./assets/img/icones/{{bloco.imagem}}" alt="">
+              </div>
+              <div class="ml-5">
+                <h3 class="text-primary mb-1">
+                  {{bloco.titulo}}
+                </h3>
+                <p class="text-muted mb-6">
+                  {{bloco.descricao}}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -91,94 +77,42 @@
             <span class="title-grey">Pessoa Jurídica</span>
           </h2>
           <div class="linha"></div>
-          <p class="font-size-lg text-muted mb-6">
-          </p>
-          <div class="d-flex">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/Dinheiro.png" alt="">
-            </div>
-            <div class="ml-5">
-              <h3 class="text-primary mb-1">
-                Doações em dinheiro
-              </h3>
-              <p class="text-muted mb-6">
-                Qualquer quantia que possa ajudar a manter mais leitos no hospital.
-              </p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/doacao.png" alt="">
-            </div>
-            <div class="ml-5">
-              <h3 class="text-primary mb-1">
-                Doação de materiais e insumos hospitalares
-              </h3>
-              <p class="text-muted mb-6">
-                • EPI’S (máscaras, aventais e luvas);<br>
-                • Lençóis;<br>
-                • Álcool em gel;<br>
-                • Equipamentos hospitalares.
-              </p>
-            </div>
-          </div>
-          <div class="d-flex mt-0">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/forca.png" alt="">
-            </div>
-            <div class="ml-5">
-              <h3 class="text-primary mb-1">
-                Força de Trabalho
-              </h3>
-              <p class="text-muted mb-6">
-                Sua equipe em prol do voluntariado.
-              </p>
+          <br>
+          <div class="box" *ngFor="let bloco of blocos | slice:3:6">
+            <div *ngIf="bloco.tipo === 2" class="d-flex">
+              <div class="icon text-primary">
+                <img class="icone-campanha" src="./assets/img/icones/{{bloco.imagem}}" alt="">
+              </div>
+              <div class="ml-5">
+                <h3 class="text-primary mb-1">
+                  {{bloco.titulo}}
+                </h3>
+                <p class="text-muted mb-6">
+                  {{bloco.descricao}}
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div id="voluntario" class="col-12 col-md-6 col-lg-6 aos-init aos-animate">
           <br>
           <br>
-          <div class="d-flex">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/alimento.png" alt="">
-            </div>
-            <div class="ml-5">
-              <h3 class="text-primary mb-1">
-                Alimentos
-              </h3>
-              <p class="text-muted mb-6">
-                Refeições prontas e alimentos perecíveis para pacientes e profissionais de plantão.
-              </p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/icon_roupas.png" alt="">
-            </div>
-            <div class="ml-5">
-              <h3 class="text-primary mb-1">
-                Roupas privativas para UTI
-              </h3>
-              <p class="text-muted mb-6">
-                Contribua com o abastecimento
-              </p>
+          <div class="box" *ngFor="let bloco of blocos | slice:6:9">
+            <div class="box" *ngIf="bloco.tipo === 2" class="d-flex">
+              <div class="icon text-primary">
+                <img class="icone-campanha" src="./assets/img/icones/{{bloco.imagem}}" alt="">
+              </div>
+              <div class="ml-5">
+                <h3 class="text-primary mb-1">
+                  {{bloco.titulo}}
+                </h3>
+                <p class="text-muted mb-6">
+                  {{bloco.descricao}}
+                </p>
+              </div>
             </div>
           </div>
           <br>
-          <div class="d-flex">
-            <div class="icon text-primary">
-              <img class="icone-campanha" src="./assets/img/icones/icon_lencol.png" alt="">
-            </div>
-            <div class="ml-5">
-              <h3 class="text-primary mb-1">
-                Lençóis Descartáveis
-              </h3>
-              <p class="text-muted mb-6">
-                Os lençóis dos leitos precisam ser trocados com frequência
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -204,19 +138,19 @@
     </h2>
     <br>
     <div class="row align-items-center">
-      <div class="col-12 col-md-4 col-lg-4 aos-init aos-animate">
+      <div *ngFor="let banco of bancos" class="col-12 col-md-4 col-lg-4 aos-init aos-animate">
         <div class="d-flex justify-content-center">
           <div class="alert alert-danger box-banco" role="alert">
-            <h2 class="alert-heading">BANCO ITAÚ</h2>
-            <h3>AG.1732 C/C: 13350-7</h3>
+            <h2 class="alert-heading">{{banco.nome}}</h2>
+            <h3>AG {{banco.agencia}} C/C: {{banco.conta}}</h3>
             <p>
-              CASA DE SAÚDE SANTA MARCELINA<br>
-              CNPJ: 60.742.616/0001-60
+              {{banco.titular}}<br>
+              CNPJ: {{banco.documento}}
             </p>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 col-lg-4 aos-init aos-animate">
+      <!-- <div class="col-12 col-md-4 col-lg-4 aos-init aos-animate">
         <div class="d-flex justify-content-center">
           <div class="alert alert-danger box-banco" role="alert">
             <h2 class="alert-heading">BANCO DO BRASIL</h2>
@@ -239,7 +173,7 @@
             </p>
           </div>
         </div>
-      </div>      
+      </div>       -->
     </div>
   </div>
   <div class="container text-center">

@@ -23,6 +23,10 @@ section#metas{
     font-weight: 700;
 }
 
+.box {
+    height: 150px;
+}
+
 .text-box {
     font-weight: 600; 
 }
@@ -124,3 +128,4 @@ section#metas img {
 .bg-grey{
     background: #e5e6e6;
 }
+

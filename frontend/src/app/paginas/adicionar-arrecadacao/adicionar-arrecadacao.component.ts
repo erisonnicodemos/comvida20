@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Arrecadacao } from 'src/app/shared/componentes/arrecadacao/arrecadacao.model';
-import { ArrecadacaoService } from 'src/app/shared/componentes/arrecadacao/arrecadacao.service';
+import { Arrecadacao } from 'src/app/models/arrecadacao.model';
+import { ArrecadacaoService } from 'src/app/services/arrecadacao.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({

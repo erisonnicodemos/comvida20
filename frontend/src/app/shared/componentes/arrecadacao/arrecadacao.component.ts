@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Arrecadacao } from './arrecadacao.model';
-import { ArrecadacaoService } from './arrecadacao.service';
+import { Arrecadacao } from '../../../models/arrecadacao.model';
+import { ArrecadacaoService } from '../../../services/arrecadacao.service';
 
 @Component({
   selector: 'app-arrecadacao',
