@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,LOCALE_ID } from '@angular/core';
+import localePt from '@angular/common/locales/pt';
+
 import { RouterModule } from '@angular/router';
-import {ProgressBarModule} from "angular-progress-bar"
+import { ProgressBarModule } from "angular-progress-bar"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,8 +16,23 @@ import { FormsModule } from '@angular/forms';
 import { ArrecadacaoComponent } from './shared/componentes/arrecadacao/arrecadacao.component';
 import { AdicionarArrecadacaoComponent } from './paginas/adicionar-arrecadacao/adicionar-arrecadacao.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
+/* Custom Hammer configuration */
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import * as Hammer from 'hammerjs';
+
+registerLocaleData(localePt, 'pt');
+
+
+export class CustomHammerConfig extends HammerGestureConfig {
+  overrides = {
+    'pan': {
+      direction: Hammer.DIRECTION_ALL,
+    }
+  }
+}
+
+import { NgxGalleryModule } from 'ngx-gallery';
+import { registerLocaleData } from '@angular/common';
 
 
 @NgModule({
@@ -35,10 +52,15 @@ import { ToastrModule } from 'ngx-toastr';
     ProgressBarModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule, 
-    ToastrModule.forRoot()
+    NgxGalleryModule
   ],
-  providers: [],
+  providers: [
+    { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig },
+    {
+      provide: LOCALE_ID,
+      useValue: "pt"
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

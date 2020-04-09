@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Arrecadacao } from 'src/app/models/arrecadacao.model';
 import { ArrecadacaoService } from 'src/app/services/arrecadacao.service';
-import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-adicionar-arrecadacao',
@@ -14,8 +13,7 @@ export class AdicionarArrecadacaoComponent implements OnInit {
   arrecadacao: Arrecadacao;
 
   constructor(
-    private arrecadacaoService: ArrecadacaoService,
-    private toastr: ToastrService) { }
+    private arrecadacaoService: ArrecadacaoService) { }
 
   ngOnInit() {
     this.obterArrecadacao()
@@ -28,19 +26,18 @@ export class AdicionarArrecadacaoComponent implements OnInit {
       });
   }
 
- 
-  
+
+
   atualizar() {
     this.arrecadacaoService.atualizar(this.arrecadacao).subscribe(
       res => {
-        this.toastr.success(`Total: ${this.arrecadacao.totalArrecadado} Percentual: ${this.arrecadacao.pencentual}%`, "Valor atualizado!");
-       
+        alert("Arrecadação atualizada!")
       },
       err => {
         console.log(err);
       }
     )
   }
- 
+
 
 }
