@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from 'src/app/services/home.service';
 import { Banco } from 'src/app/models/banco.model';
 import { Bloco } from 'src/app/models/bloco.model';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
@@ -17,11 +16,9 @@ export class HomeComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
 
-  constructor(private service: HomeService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.obterBlocos();
-    this.obterBancos();
 
     this.galleryOptions = [
       {
@@ -29,29 +26,14 @@ export class HomeComponent implements OnInit {
         height: '400px',
         thumbnailsColumns: 14,
         imageAnimation: NgxGalleryAnimation.Slide
-      },
-      // max-width 800
-      {
-        breakpoint: 800,
-        width: '100%',
-        height: '100%',
-        imagePercent: 80,
-        thumbnailsPercent: 20,
-        thumbnailsMargin: 20,
-        thumbnailMargin: 20
-      },
-      // max-width 400
-      {
-        breakpoint: 400,
-        preview: false
       }
     ];
 
     this.galleryImages = [
       {
-        small: 'assets/1.jpg',
-        medium: 'assets/1.jpg',
-        big: 'assets/1.jpg'
+        small: 'assets/1.jpeg',
+        medium: 'assets/1.jpeg',
+        big: 'assets/1.jpeg'
       },
       {
         small: 'assets/2.jpg',
@@ -112,29 +94,12 @@ export class HomeComponent implements OnInit {
         small: 'assets/13.jpg',
         medium: 'assets/13.jpg',
         big: 'assets/13.jpg'
-      },
-      {
-        small: 'assets/14.jpg',
-        medium: 'assets/14.jpg',
-        big: 'assets/14.jpg'
       }
     ];
 
   }
 
-  obterBancos() {
-    this.service.obterBancos()
-      .subscribe((banco: Banco[]) => {
-        this.bancos = banco;
-      });
-  }
-
-  obterBlocos() {
-    this.service.obterBlocos()
-      .subscribe((bloco: Bloco[]) => {
-        this.blocos = bloco;
-      });
-  }
+ 
 
 
 }
