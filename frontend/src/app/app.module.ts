@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule,LOCALE_ID } from '@angular/core';
+import { NgModule, LOCALE_ID, Injectable } from '@angular/core';
 import localePt from '@angular/common/locales/pt';
 
 import { RouterModule } from '@angular/router';
@@ -23,6 +23,7 @@ import * as Hammer from 'hammerjs';
 registerLocaleData(localePt, 'pt');
 
 
+@Injectable()
 export class CustomHammerConfig extends HammerGestureConfig {
   overrides = {
     'pan': {
