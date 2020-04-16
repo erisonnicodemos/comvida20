@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img src="./assets/img/logo_comvida.png" class="navbar-brand-img" alt="logo">
+    </a>
+    <button (click)="toggleNavbar()" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngClass]="{ 'show': navbarOpen }" id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a (click)="fecharNav()" class="nav-link" [routerLink]="['/']">Home
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a (click)="fecharNav()" class="nav-link" href="http://santamarcelina.org" target="_blank">Hospital Santa
+            Marcelina</a>
+        </li>
+        <li class="nav-item ">
+          <a (click)="fecharNav()" class="nav-link" href="./MEDIA_KIT_COM_VIDA_conti.pdf" target="_blank">A Campanha</a>
+        </li>
+        <li class="li-btn-doacao">
+          <a (click)="fecharNav()" href="https://docs.google.com/forms/d/e/1FAIpQLScmk20UH8Rj8dspKnpfN0bRt3QKsipbvoaAxWXiMdIOHI5VwQ/viewform" target="_blank" class="navbar-btn btn btn-sm btn-doe lift ml-auto">
+            Faça sua Doação
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

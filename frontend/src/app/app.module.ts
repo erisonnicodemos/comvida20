@@ -13,7 +13,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LayoutComponent } from './shared/layout.page';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ArrecadacaoComponent } from './shared/componentes/arrecadacao/arrecadacao.component';
+import { ArrecadacaoComponent } from './shared/components/arrecadacao/arrecadacao.component';
 import { AdicionarArrecadacaoComponent } from './paginas/adicionar-arrecadacao/adicionar-arrecadacao.component';
 
 /* Custom Hammer configuration */
@@ -34,6 +34,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
 
 import { NgxGalleryModule } from 'ngx-gallery-9';
 import { registerLocaleData } from '@angular/common';
+import { ParceirosComponent } from './shared/components/parceiros/parceiros.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { registerLocaleData } from '@angular/common';
     MenuComponent,
     FooterComponent,
     ArrecadacaoComponent,
-    AdicionarArrecadacaoComponent
+    AdicionarArrecadacaoComponent,
+    ParceirosComponent
   ],
   imports: [
     BrowserModule,

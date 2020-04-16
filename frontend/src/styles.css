@@ -129,3 +129,17 @@ section#metas img {
     background: #e5e6e6;
 }
 
+#parceiros ngx-gallery-image {
+    display: none;
+}
+
+#parceiros ngx-gallery-thumbnails{
+    width: 800px;
+    height: 256px;
+}
+
+footer {
+    background-color: #b6b7b942
+}
+
+
