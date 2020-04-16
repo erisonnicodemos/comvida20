@@ -32,7 +32,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
   }
 }
 
-import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxGalleryModule } from 'ngx-gallery-9';
 import { registerLocaleData } from '@angular/common';
 
 
