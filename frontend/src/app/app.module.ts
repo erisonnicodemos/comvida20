@@ -36,6 +36,8 @@ import { NgxGalleryModule } from 'ngx-gallery-9';
 import { registerLocaleData } from '@angular/common';
 import { ParceirosComponent } from './shared/components/parceiros/parceiros.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { ParceirosComponent } from './shared/components/parceiros/parceiros.comp
     ProgressBarModule,
     FormsModule,
     HttpClientModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    NgbModule
   ],
   providers: [
     { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig },
