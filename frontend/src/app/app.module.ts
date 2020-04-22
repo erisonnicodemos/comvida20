@@ -37,6 +37,7 @@ import { registerLocaleData } from '@angular/common';
 import { ParceirosComponent } from './shared/components/parceiros/parceiros.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { GaleriaComponent } from './shared/components/galeria/galeria.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     ArrecadacaoComponent,
     AdicionarArrecadacaoComponent,
-    ParceirosComponent
+    ParceirosComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,
