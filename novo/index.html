@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Comvida-20</title>
+    <base href="./">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-3  shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./assets/img/logo_comvida_white.png" class="navbar-brand-img" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-white navbar-btn btn-sm">Hospital Santa Marcelina</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-white navbar-btn btn-sm">A Campanha</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-white navbar-btn btn-sm">Resumo</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-white navbar-btn btn-sm">Depoimentos</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-doe navbar-btn btn-sm">Faça sua Doação</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 col-lg-5 pl-5 pr-0 order-md-2">
+                                <img src="assets/img/hospital-santa-marcelina.jpg" alt="Hospital" data-aos="fade-up" data-aos-delay="100" class="img-fluid aos-init aos-animate">
+                            </div>
+                            <div class="col-md-6 col-lg-6 pt-5 order-md-1 text-center">
+                                <h1 class="slide-titulo"> JUNTE-SE AO HOSPITAL <br>SANTA MARCELINA<br></h1>
+                                <h2 class="slide-sub-titulo"> NA LUTA CONTRA O<br> COVID-19</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 col-lg-4 text-center order-md-1">
+                                <img class="icone-slide" src="assets/img/icones/CONTATO.png" alt="CONTATO">
+                            </div>
+                            <div class="col-md-6 col-lg-6 pt-5 order-md-2 text-center">
+                                <h1 class="titulo-mais-informacoes"> Para mais informações :<br>(11) 5555-7050</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <!-- Doacoes -->
+        <section class="pt-8 pt-md-3 bg-gradient-light" id="doacoes">
+            <div class="container">
+                <h1 class="text-primary display-4"> Como você pode ajudar? </h1>
+                <div class="row align-items-center" id="campanha">
+                    <div class="col-12 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-right">
+                        <h2><span class="title-grey">Pessoa Física</span></h2>
+                        <div class="linha"></div><br>
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/Dinheiro.png">
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Doações em dinheiro </h3>
+                                    <p class="text-muted mb-6"> Qualquer quantia que possa ajudar a manter mais leitos no hospital </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/luva.png">
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Trabalho Voluntário </h3>
+                                    <p class="text-muted mb-6"> Você pode ajudar com sua mão de obra. Precisamos de médicos, enfermeiros, costureiras, designers, profissionais de comunicação, entre outros. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 aos-init aos-animate">
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/doacao.png">
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Doação de Sangue </h3>
+                                    <p class="text-muted mb-6"> Ajude a reabastecer nossas bolsas de sangue. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-right">
+                        <h2><span class="title-grey">Pessoa Jurídica</span></h2>
+                        <div class="linha"></div><br>
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/Dinheiro.png">
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Doações em dinheiro </h3>
+                                    <p class="text-muted mb-6"> Qualquer quantia que possa ajudar a manter mais leitos no hospital. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/doacao.png">
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Doação de materiais e insumos hospitalares </h3>
+                                    <p class="text-muted mb-6"> EPI’S (máscaras, aventais e luvas) ,Lençóis, Álcool em gel, Equipamentos hospitalares. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/forca.png">
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Força de Trabalho </h3>
+                                    <p class="text-muted mb-6"> Sua equipe em prol do voluntariado. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 aos-init aos-animate" id="voluntario"><br><br>
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/alimento.png">
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Alimentos </h3>
+                                    <p class="text-muted mb-6"> Refeições prontas e alimentos perecíveis para pacientes e profissionais de plantão. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/icon_roupas.png"></div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Roupas privativas para UTI </h3>
+                                    <p class="text-muted mb-6"> Contribua com o abastecimento </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="d-flex">
+                                <div class="icon text-primary"><img alt="" class="icone-campanha" src="./assets/img/icones/icon_lencol.png"></div>
+                                <div class="ml-5">
+                                    <h3 class="text-primary mb-1"> Lençóis Descartáveis </h3>
+                                    <p class="text-muted mb-6"> Os lençóis dos leitos precisam ser trocados com frequência </p>
+                                </div>
+                            </div>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br>
+    <!-- Dados Bancario -->
+    <section id="dados-bancarios" class="pt-8 pt-md-3 bg-gradient-light">
+        <div class="container" id="doe">
+            <h2><span class="title-grey">Dados Bancários</span></h2><br>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 col-lg-4 aos-init aos-animate">
+                    <div class="d-flex justify-content-center">
+                        <div class="alert alert-danger box-banco" role="alert">
+                            <h2 class="alert-heading">BANCO ITAU</h2>
+                            <h3>AG 1732 C/C: 13350-7</h3>
+                            <p> CASA DE SAÚDE SANTA MARCELINA<br> CNPJ: 60.742.616/0001-60 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 aos-init aos-animate">
+                    <div class="d-flex justify-content-center">
+                        <div class="alert alert-danger box-banco" role="alert">
+                            <h2 class="alert-heading">BANCO DO BRASIL</h2>
+                            <h3>AG 19119 C/C: 8560-X</h3>
+                            <p> STA MARCELINA COMVIDA-20<br> CNPJ: 60.742.616/0001-60 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 aos-init aos-animate">
+                    <div class="d-flex justify-content-center">
+                        <div class="alert alert-danger box-banco" role="alert">
+                            <h2 class="alert-heading">BANCO SANTANDER</h2>
+                            <h3>AG 3809 C/C: 13000370-2</h3>
+                            <p> CASA DE SAÚDE SANTA MARCELIN<br> CNPJ: 60.742.616/0001-60 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
+                <h2>
+                    <span class="text-primary">Para mais informações:</span><br>
+                    <span class="text-danger">(11) 5555-7050 </span>
+                </h2>
+                <p class="text-primary">O Santa Marcelina não recebe doações em espécie, somente via transações bancárias.
+                </p>
+            </div>
+        </div>
+        <hr>
+
+        <br>
+    </section>
+    <!-- Metas -->
+    <section id="metas" class="pt-8 pt-md-5 pb-8 bg-gradient-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 order-md-2 col-lg-7 mb-5 aos-init aos-animate" data-aos="fade-right">
+                    <img class="img-fluid" src="./assets/img/icones/20_MILHOES.jpg" alt="20_MILHOES">
+                </div>
+                <div class="col-12 col-md-4 order-md-1 col-lg-4 ml-5 aos-init aos-animate">
+                    <h3 class="sub-titulo">Nossa Meta</h3>
+                    <h1 class="box-title">Nos ajude a alcançar </h1>
+                    <p class="text-box">
+                        Sua doação irá ajudar a criar mais leitos e manter a qualidade da assistência à população
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 col-lg-7 order-md-2  mb-5 aos-init aos-animate" data-aos="fade-right">
+                    <img class="img-fluid" src="./assets/img/icones/DOE.jpg" alt="Doe">
+                </div>
+                <div class="col-12 col-md-4 order-md-1 col-lg-4 ml-5 aos-init aos-animate">
+                    <h3 class="sub-titulo">Salve vidas</h3>
+                    <h1 class="box-title">Doe Sangue</h1>
+                    <p class="text-box">
+                        Procure o Banco de Sangue do Hospital Santa Marcelina <br> Rua Harry Dannerberg, 473 Itaquera<br> (11)2523-0546
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 col-lg-7 order-md-2 mb-5 aos-init aos-animate" data-aos="fade-right">
+                    <img class="img-fluid" src="./assets/img/icones/EQUIP.jpg" alt="DoeEquipamentos">
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 order-md-1 order-md-1 ml-5 aos-init aos-animate">
+                    <h3 class="sub-titulo">Doe</h3>
+                    <h1 class="box-title">Equipamentos </h1>
+                    <h1 class="box-title">Medicamentos</h1>
+                    <h1 class="box-title">Alimentos</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-md-10 col-lg-10">
+                    <img src="https://santamarcelina.org/wp-content/themes/default/images/usercontrols/topo/logotipo.png" alt="..." class="footer-brand img-fluid mb-2">
+                </div>
+                <div class="d-flex align-items-center col-12 col-md-2 col-lg-2">
+                    <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+                        <li class="list-inline-item list-social-item mr-3">
+                            <a href="https://www.instagram.com/hospitalsantamarcelina" class="text-decoration-none">
+                                <img src="./assets/img/icones/instagram.svg" class="list-social-icon" alt="...">
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item mr-3">
+                            <a href="https://www.facebook.com/HospitalSantaMarcelina/" class="text-decoration-none">
+                                <img src="./assets/img/icones/facebook.svg" class="list-social-icon" alt="...">
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item mr-3">
+                            <a href="https://twitter.com/hosp_marcelina" class="text-decoration-none">
+                                <img src="./assets/img/icones/twitter.svg" class="list-social-icon" alt="...">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>

@@ -21,7 +21,92 @@ export class GaleriaComponent implements OnInit {
       { "breakpoint": 300, "width": "100%", "height": "200px", "thumbnailsColumns": 2 }
     ];
 
-    this.galleryImages = [
+    this.galleryImages = [      
+      {
+        small: 'assets/galeria/AgeBrasil.png',
+        medium: 'assets/galeria/AgeBrasil.png',
+        big: 'assets/galeria/AgeBrasil.png'
+      },
+      {
+        small: 'assets/galeria/Aramis-camisas.png',
+        medium: 'assets/galeria/Aramis-camisas.png',
+        big: 'assets/galeria/Aramis-camisas.png'
+      },
+      {
+        small: 'assets/galeria/BIC_barbeador.png',
+        medium: 'assets/galeria/BIC_barbeador.png',
+        big: 'assets/galeria/BIC_barbeador.png'
+      },
+      {
+        small: 'assets/galeria/Câmara-de-Comércio-Árabe-Brasileira-mascaras.png',
+        medium: 'assets/galeria/Câmara-de-Comércio-Árabe-Brasileira-mascaras.png',
+        big: 'assets/galeria/Câmara-de-Comércio-Árabe-Brasileira-mascaras.png'
+      },
+      {
+        small: 'assets/galeria/Danielle-Tereza_tnt.png',
+        medium: 'assets/galeria/Danielle-Tereza_tnt.png',
+        big: 'assets/galeria/Danielle-Tereza_tnt.png'
+      },
+      {
+        small: 'assets/galeria/Dra-Gisele-Coelho_luvas e masks.png',
+        medium: 'assets/galeria/Dra-Gisele-Coelho_luvas e masks.png',
+        big: 'assets/galeria/Dra-Gisele-Coelho_luvas e masks.png'
+      },
+      {
+        small: 'assets/galeria/Essencial_masks.png',
+        medium: 'assets/galeria/Essencial_masks.png',
+        big: 'assets/galeria/Essencial_masks.png'
+      },
+      {
+        small: 'assets/galeria/FEI_face-shields.png',
+        medium: 'assets/galeria/FEI_face-shields.png',
+        big: 'assets/galeria/FEI_face-shields.png'
+      },
+      {
+        small: 'assets/galeria/Giraffas_feijoada.png',
+        medium: 'assets/galeria/Giraffas_feijoada.png',
+        big: 'assets/galeria/Giraffas_feijoada.png'
+      },
+      {
+        small: 'assets/galeria/Lions_prot faciais.png',
+        medium: 'assets/galeria/Lions_prot faciais.png',
+        big: 'assets/galeria/Lions_prot faciais.png'
+      },
+      {
+        small: 'assets/galeria/Mendel_alimentos.png',
+        medium: 'assets/galeria/Mendel_alimentos.png',
+        big: 'assets/galeria/Mendel_alimentos.png'
+      },
+      {
+        small: 'assets/galeria/ONOM.png',
+        medium: 'assets/galeria/ONOM.png',
+        big: 'assets/galeria/ONOM.png'
+      },
+      {
+        small: 'assets/galeria/Ronam-e-Emilio_cestas-basicas.png',
+        medium: 'assets/galeria/Ronam-e-Emilio_cestas-basicas.png',
+        big: 'assets/galeria/Ronam-e-Emilio_cestas-basicas.png'
+      },
+      {
+        small: 'assets/galeria/Sr Reinaldo_freezer.png',
+        medium: 'assets/galeria/Sr Reinaldo_freezer.png',
+        big: 'assets/galeria/Sr Reinaldo_freezer.png'
+      },
+      {
+        small: 'assets/galeria/Sra Deise_roupas-bebes.png',
+        medium: 'assets/galeria/Sra Deise_roupas-bebesr.png',
+        big: 'assets/galeria/Sra Deise_roupas-bebes.png'
+      },
+      {
+        small: 'assets/galeria/Tecelagem3irmas_tnt.png',
+        medium: 'assets/galeria/Tecelagem3irmas_tnt.png',
+        big: 'assets/galeria/Tecelagem3irmas_tnt.png'
+      },
+      {
+        small: 'assets/galeria/Telhanorte_respiradores.png',
+        medium: 'assets/galeria/Telhanorte_respiradores.png',
+        big: 'assets/galeria/Telhanorte_respiradores.png'
+      },
       {
         small: 'assets/galeria/4500-máscaras-N95---EDP.png',
         medium: 'assets/galeria/4500-máscaras-N95---EDP.png',
@@ -141,9 +226,7 @@ export class GaleriaComponent implements OnInit {
         small: 'assets/galeria/Ype-Alcool-em-Gel.png',
         medium: 'assets/galeria/Ype-Alcool-em-Gel.png',
         big: 'assets/galeria/Ype-Alcool-em-Gel.png'
-      },
-
-
+      }
     ];
 
   }
