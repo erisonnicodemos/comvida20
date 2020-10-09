@@ -1,4 +1,9 @@
 # Comvida20
+Hotsite do projeto Comvida, projeto para digulgar as doações recebidas durante a pandemia de covid-19 para os Hospitais da Rede Santa Marcelina.
+
+# Demo
+https://sm-comvida20.netlify.app/
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
