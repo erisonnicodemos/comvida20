@@ -16,7 +16,7 @@ export class HomeService {
     this.headers = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8' });
   }
 
-  // Obtem todos os bancos
+  // Obtem todos os bancos cadastrados
   obterBancos(): Observable<Banco[]> {
     return this.http.get<Banco[]>(this.url + 'banco')
       .pipe(
